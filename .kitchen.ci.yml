@@ -79,6 +79,7 @@ suites:
           publicport: 50003
           generate_firewall: True
     run_list:
+      - recipe[bubble-cookbook-support::before_master_cookbook]
       - recipe[bubble::default]
     attributes:
       bubble:
@@ -96,6 +97,7 @@ suites:
           publicport: 50004
           generate_firewall: True
     run_list:
+      - recipe[bubble-cookbook-support::before_master_cookbook]
       - recipe[bubble::default]
     attributes:
       bubble:
