@@ -1616,26 +1616,26 @@ or other application using the libvirt API.
       <host mac='52:54:00:1d:aa:77' name='db7' ip='192.168.22.77' />
       <host mac='52:54:00:1d:aa:78' name='db8' ip='192.168.22.78' />
       <host mac='52:54:00:1d:aa:79' name='db9' ip='192.168.22.79' />
-      <host mac='52:54:00:1d:aa:80' name='nsxmgr0' ip='192.168.22.80' />
-      <host mac='52:54:00:1d:aa:81' name='nsxmgr1' ip='192.168.22.81' />
-      <host mac='52:54:00:1d:aa:82' name='nsxmgr2' ip='192.168.22.82' />
+      <host mac='52:54:00:1d:aa:80' name='nsxmgr1' ip='192.168.22.80' />
+      <host mac='52:54:00:1d:aa:81' name='nsxmgr2' ip='192.168.22.81' />
+      <host mac='52:54:00:1d:aa:82' name='nsxmgr3' ip='192.168.22.82' />
       <host mac='52:54:00:1d:aa:83' name='nsxcon1' ip='192.168.22.83' />
       <host mac='52:54:00:1d:aa:84' name='nsxcon2' ip='192.168.22.84' />
       <host mac='52:54:00:1d:aa:85' name='nsxcon3' ip='192.168.22.85' />
-      <host mac='52:54:00:1d:aa:86' name='nsxsvc1' ip='192.168.22.86' />
-      <host mac='52:54:00:1d:aa:87' name='nsxsvc2' ip='192.168.22.87' />
-      <host mac='52:54:00:1d:aa:88' name='nsxsvc3' ip='192.168.22.88' />
-      <host mac='52:54:00:1d:aa:89' name='sdn1' ip='192.168.22.89' />
-      <host mac='52:54:00:1d:aa:90' name='gen0' ip='192.168.22.90' />
-      <host mac='52:54:00:1d:aa:91' name='gen1' ip='192.168.22.91' />
-      <host mac='52:54:00:1d:aa:92' name='gen2' ip='192.168.22.92' />
-      <host mac='52:54:00:1d:aa:93' name='gen3' ip='192.168.22.93' />
-      <host mac='52:54:00:1d:aa:94' name='gen4' ip='192.168.22.94' />
-      <host mac='52:54:00:1d:aa:95' name='gen5' ip='192.168.22.95' />
-      <host mac='52:54:00:1d:aa:96' name='gen6' ip='192.168.22.96' />
-      <host mac='52:54:00:1d:aa:97' name='gen7' ip='192.168.22.97' />
-      <host mac='52:54:00:1d:aa:98' name='gen8' ip='192.168.22.98' />
-      <host mac='52:54:00:1d:aa:99' name='gen9' ip='192.168.22.99' />
+      <host mac='52:54:00:1d:aa:86' name='nsxcon4' ip='192.168.22.86' />
+      <host mac='52:54:00:1d:aa:87' name='nsxcon5' ip='192.168.22.87' />
+      <host mac='52:54:00:1d:aa:88' name='nsxcon6' ip='192.168.22.88' />
+      <host mac='52:54:00:1d:aa:89' name='nsxsvc1' ip='192.168.22.89' />
+      <host mac='52:54:00:1d:aa:90' name='nsxsvc2' ip='192.168.22.90' />
+      <host mac='52:54:00:1d:aa:91' name='nsxsvc3' ip='192.168.22.91' />
+      <host mac='52:54:00:1d:aa:92' name='nsxsvc4' ip='192.168.22.92' />
+      <host mac='52:54:00:1d:aa:93' name='nsxsvc5' ip='192.168.22.93' />
+      <host mac='52:54:00:1d:aa:94' name='nsxsvc6' ip='192.168.22.94' />
+      <host mac='52:54:00:1d:aa:95' name='sdn1' ip='192.168.22.95' />
+      <host mac='52:54:00:1d:aa:96' name='gen0' ip='192.168.22.96' />
+      <host mac='52:54:00:1d:aa:97' name='gen1' ip='192.168.22.97' />
+      <host mac='52:54:00:1d:aa:98' name='gen2' ip='192.168.22.98' />
+      <host mac='52:54:00:1d:aa:99' name='gen3' ip='192.168.22.99' />
     </dhcp>
   </ip>
 </network>
