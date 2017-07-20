@@ -4,7 +4,7 @@ maintainer_email 'fneubauer@schubergphilis.com'
 license 'All rights reserved'
 description 'Installs/Configures the "bubble" for developing'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.1.9'
+version '0.1.10'
 
 depends 'parted'
 depends 'nfs'
