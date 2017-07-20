@@ -11,7 +11,7 @@ bash 'unzip_terraform' do
   user 'root'
   cwd "#{tmp_loc}"
   code <<-EOH
-  unzip terraform.zip
+  unzip -o terraform.zip
   EOH
 end
 
