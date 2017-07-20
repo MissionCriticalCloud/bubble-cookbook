@@ -14,6 +14,7 @@ include_recipe 'bubble::libvirt'
 include_recipe 'bubble::minikube' if node['bubble']['minikube']
 include_recipe 'bubble::helm' if node['bubble']['helm']
 include_recipe 'bubble::terraform' if node['bubble']['terraform']
+include_recipe 'bubble::npm_packages' if node['bubble']['npm_packages']
 
 # Copy ssh_config to manage global SSH settings
 cookbook_file '/etc/ssh/ssh_config' do

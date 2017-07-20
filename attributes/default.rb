@@ -40,5 +40,7 @@ default['bubble']['helm_download_url']                      = 'https://storage.g
 default['bubble']['terraform'] = true
 default['bubble']['terraform_download_url'] = 'https://releases.hashicorp.com/terraform/0.9.8/terraform_0.9.8_linux_amd64.zip'
 
+default['bubble']['npm_packages'] = true
+
 # Keep settings default and allow settting at project level
 force_default['maven']['mavenrc']['opts'] = ''
