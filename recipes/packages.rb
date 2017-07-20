@@ -45,3 +45,7 @@ package %w(python-devel python-ecdsa python-setuptools rubygems)
 python_pip 'awscli' do
   action :upgrade
 end
+
+# Packages for frontend apps
+include_recipe 'nodejs::npm'
+nodejs_npm 'bower'
