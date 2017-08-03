@@ -19,770 +19,770 @@ or other application using the libvirt API.
   <domain name='cloud.lan' />
   <dns>
     <forwarder addr='127.0.0.1' />
-    <host ip='192.168.23.1'>
-      <hostname>192-168-23-1.cloud.lan</hostname>
+    <host ip='100.64.0.1'>
+      <hostname>100-64-0-1.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.2'>
-      <hostname>192-168-23-2.cloud.lan</hostname>
+    <host ip='100.64.0.2'>
+      <hostname>100-64-0-2.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.3'>
-      <hostname>192-168-23-3.cloud.lan</hostname>
+    <host ip='100.64.0.3'>
+      <hostname>100-64-0-3.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.4'>
-      <hostname>192-168-23-4.cloud.lan</hostname>
+    <host ip='100.64.0.4'>
+      <hostname>100-64-0-4.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.5'>
-      <hostname>192-168-23-5.cloud.lan</hostname>
+    <host ip='100.64.0.5'>
+      <hostname>100-64-0-5.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.6'>
-      <hostname>192-168-23-6.cloud.lan</hostname>
+    <host ip='100.64.0.6'>
+      <hostname>100-64-0-6.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.7'>
-      <hostname>192-168-23-7.cloud.lan</hostname>
+    <host ip='100.64.0.7'>
+      <hostname>100-64-0-7.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.8'>
-      <hostname>192-168-23-8.cloud.lan</hostname>
+    <host ip='100.64.0.8'>
+      <hostname>100-64-0-8.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.9'>
-      <hostname>192-168-23-9.cloud.lan</hostname>
+    <host ip='100.64.0.9'>
+      <hostname>100-64-0-9.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.10'>
-      <hostname>192-168-23-10.cloud.lan</hostname>
+    <host ip='100.64.0.10'>
+      <hostname>100-64-0-10.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.11'>
-      <hostname>192-168-23-11.cloud.lan</hostname>
+    <host ip='100.64.0.11'>
+      <hostname>100-64-0-11.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.12'>
-      <hostname>192-168-23-12.cloud.lan</hostname>
+    <host ip='100.64.0.12'>
+      <hostname>100-64-0-12.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.13'>
-      <hostname>192-168-23-13.cloud.lan</hostname>
+    <host ip='100.64.0.13'>
+      <hostname>100-64-0-13.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.14'>
-      <hostname>192-168-23-14.cloud.lan</hostname>
+    <host ip='100.64.0.14'>
+      <hostname>100-64-0-14.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.15'>
-      <hostname>192-168-23-15.cloud.lan</hostname>
+    <host ip='100.64.0.15'>
+      <hostname>100-64-0-15.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.16'>
-      <hostname>192-168-23-16.cloud.lan</hostname>
+    <host ip='100.64.0.16'>
+      <hostname>100-64-0-16.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.17'>
-      <hostname>192-168-23-17.cloud.lan</hostname>
+    <host ip='100.64.0.17'>
+      <hostname>100-64-0-17.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.18'>
-      <hostname>192-168-23-18.cloud.lan</hostname>
+    <host ip='100.64.0.18'>
+      <hostname>100-64-0-18.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.19'>
-      <hostname>192-168-23-19.cloud.lan</hostname>
+    <host ip='100.64.0.19'>
+      <hostname>100-64-0-19.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.20'>
-      <hostname>192-168-23-20.cloud.lan</hostname>
+    <host ip='100.64.0.20'>
+      <hostname>100-64-0-20.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.21'>
-      <hostname>192-168-23-21.cloud.lan</hostname>
+    <host ip='100.64.0.21'>
+      <hostname>100-64-0-21.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.22'>
-      <hostname>192-168-23-22.cloud.lan</hostname>
+    <host ip='100.64.0.22'>
+      <hostname>100-64-0-22.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.23'>
-      <hostname>192-168-23-23.cloud.lan</hostname>
+    <host ip='100.64.0.23'>
+      <hostname>100-64-0-23.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.24'>
-      <hostname>192-168-23-24.cloud.lan</hostname>
+    <host ip='100.64.0.24'>
+      <hostname>100-64-0-24.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.25'>
-      <hostname>192-168-23-25.cloud.lan</hostname>
+    <host ip='100.64.0.25'>
+      <hostname>100-64-0-25.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.26'>
-      <hostname>192-168-23-26.cloud.lan</hostname>
+    <host ip='100.64.0.26'>
+      <hostname>100-64-0-26.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.27'>
-      <hostname>192-168-23-27.cloud.lan</hostname>
+    <host ip='100.64.0.27'>
+      <hostname>100-64-0-27.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.28'>
-      <hostname>192-168-23-28.cloud.lan</hostname>
+    <host ip='100.64.0.28'>
+      <hostname>100-64-0-28.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.29'>
-      <hostname>192-168-23-29.cloud.lan</hostname>
+    <host ip='100.64.0.29'>
+      <hostname>100-64-0-29.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.30'>
-      <hostname>192-168-23-30.cloud.lan</hostname>
+    <host ip='100.64.0.30'>
+      <hostname>100-64-0-30.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.31'>
-      <hostname>192-168-23-31.cloud.lan</hostname>
+    <host ip='100.64.0.31'>
+      <hostname>100-64-0-31.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.32'>
-      <hostname>192-168-23-32.cloud.lan</hostname>
+    <host ip='100.64.0.32'>
+      <hostname>100-64-0-32.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.33'>
-      <hostname>192-168-23-33.cloud.lan</hostname>
+    <host ip='100.64.0.33'>
+      <hostname>100-64-0-33.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.34'>
-      <hostname>192-168-23-34.cloud.lan</hostname>
+    <host ip='100.64.0.34'>
+      <hostname>100-64-0-34.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.35'>
-      <hostname>192-168-23-35.cloud.lan</hostname>
+    <host ip='100.64.0.35'>
+      <hostname>100-64-0-35.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.36'>
-      <hostname>192-168-23-36.cloud.lan</hostname>
+    <host ip='100.64.0.36'>
+      <hostname>100-64-0-36.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.37'>
-      <hostname>192-168-23-37.cloud.lan</hostname>
+    <host ip='100.64.0.37'>
+      <hostname>100-64-0-37.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.38'>
-      <hostname>192-168-23-38.cloud.lan</hostname>
+    <host ip='100.64.0.38'>
+      <hostname>100-64-0-38.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.39'>
-      <hostname>192-168-23-39.cloud.lan</hostname>
+    <host ip='100.64.0.39'>
+      <hostname>100-64-0-39.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.40'>
-      <hostname>192-168-23-40.cloud.lan</hostname>
+    <host ip='100.64.0.40'>
+      <hostname>100-64-0-40.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.41'>
-      <hostname>192-168-23-41.cloud.lan</hostname>
+    <host ip='100.64.0.41'>
+      <hostname>100-64-0-41.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.42'>
-      <hostname>192-168-23-42.cloud.lan</hostname>
+    <host ip='100.64.0.42'>
+      <hostname>100-64-0-42.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.43'>
-      <hostname>192-168-23-43.cloud.lan</hostname>
+    <host ip='100.64.0.43'>
+      <hostname>100-64-0-43.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.44'>
-      <hostname>192-168-23-44.cloud.lan</hostname>
+    <host ip='100.64.0.44'>
+      <hostname>100-64-0-44.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.45'>
-      <hostname>192-168-23-45.cloud.lan</hostname>
+    <host ip='100.64.0.45'>
+      <hostname>100-64-0-45.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.46'>
-      <hostname>192-168-23-46.cloud.lan</hostname>
+    <host ip='100.64.0.46'>
+      <hostname>100-64-0-46.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.47'>
-      <hostname>192-168-23-47.cloud.lan</hostname>
+    <host ip='100.64.0.47'>
+      <hostname>100-64-0-47.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.48'>
-      <hostname>192-168-23-48.cloud.lan</hostname>
+    <host ip='100.64.0.48'>
+      <hostname>100-64-0-48.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.49'>
-      <hostname>192-168-23-49.cloud.lan</hostname>
+    <host ip='100.64.0.49'>
+      <hostname>100-64-0-49.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.50'>
-      <hostname>192-168-23-50.cloud.lan</hostname>
+    <host ip='100.64.0.50'>
+      <hostname>100-64-0-50.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.51'>
-      <hostname>192-168-23-51.cloud.lan</hostname>
+    <host ip='100.64.0.51'>
+      <hostname>100-64-0-51.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.52'>
-      <hostname>192-168-23-52.cloud.lan</hostname>
+    <host ip='100.64.0.52'>
+      <hostname>100-64-0-52.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.53'>
-      <hostname>192-168-23-53.cloud.lan</hostname>
+    <host ip='100.64.0.53'>
+      <hostname>100-64-0-53.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.54'>
-      <hostname>192-168-23-54.cloud.lan</hostname>
+    <host ip='100.64.0.54'>
+      <hostname>100-64-0-54.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.55'>
-      <hostname>192-168-23-55.cloud.lan</hostname>
+    <host ip='100.64.0.55'>
+      <hostname>100-64-0-55.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.56'>
-      <hostname>192-168-23-56.cloud.lan</hostname>
+    <host ip='100.64.0.56'>
+      <hostname>100-64-0-56.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.57'>
-      <hostname>192-168-23-57.cloud.lan</hostname>
+    <host ip='100.64.0.57'>
+      <hostname>100-64-0-57.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.58'>
-      <hostname>192-168-23-58.cloud.lan</hostname>
+    <host ip='100.64.0.58'>
+      <hostname>100-64-0-58.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.59'>
-      <hostname>192-168-23-59.cloud.lan</hostname>
+    <host ip='100.64.0.59'>
+      <hostname>100-64-0-59.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.60'>
-      <hostname>192-168-23-60.cloud.lan</hostname>
+    <host ip='100.64.0.60'>
+      <hostname>100-64-0-60.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.61'>
-      <hostname>192-168-23-61.cloud.lan</hostname>
+    <host ip='100.64.0.61'>
+      <hostname>100-64-0-61.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.62'>
-      <hostname>192-168-23-62.cloud.lan</hostname>
+    <host ip='100.64.0.62'>
+      <hostname>100-64-0-62.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.63'>
-      <hostname>192-168-23-63.cloud.lan</hostname>
+    <host ip='100.64.0.63'>
+      <hostname>100-64-0-63.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.64'>
-      <hostname>192-168-23-64.cloud.lan</hostname>
+    <host ip='100.64.0.64'>
+      <hostname>100-64-0-64.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.65'>
-      <hostname>192-168-23-65.cloud.lan</hostname>
+    <host ip='100.64.0.65'>
+      <hostname>100-64-0-65.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.66'>
-      <hostname>192-168-23-66.cloud.lan</hostname>
+    <host ip='100.64.0.66'>
+      <hostname>100-64-0-66.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.67'>
-      <hostname>192-168-23-67.cloud.lan</hostname>
+    <host ip='100.64.0.67'>
+      <hostname>100-64-0-67.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.68'>
-      <hostname>192-168-23-68.cloud.lan</hostname>
+    <host ip='100.64.0.68'>
+      <hostname>100-64-0-68.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.69'>
-      <hostname>192-168-23-69.cloud.lan</hostname>
+    <host ip='100.64.0.69'>
+      <hostname>100-64-0-69.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.70'>
-      <hostname>192-168-23-70.cloud.lan</hostname>
+    <host ip='100.64.0.70'>
+      <hostname>100-64-0-70.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.71'>
-      <hostname>192-168-23-71.cloud.lan</hostname>
+    <host ip='100.64.0.71'>
+      <hostname>100-64-0-71.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.72'>
-      <hostname>192-168-23-72.cloud.lan</hostname>
+    <host ip='100.64.0.72'>
+      <hostname>100-64-0-72.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.73'>
-      <hostname>192-168-23-73.cloud.lan</hostname>
+    <host ip='100.64.0.73'>
+      <hostname>100-64-0-73.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.74'>
-      <hostname>192-168-23-74.cloud.lan</hostname>
+    <host ip='100.64.0.74'>
+      <hostname>100-64-0-74.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.75'>
-      <hostname>192-168-23-75.cloud.lan</hostname>
+    <host ip='100.64.0.75'>
+      <hostname>100-64-0-75.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.76'>
-      <hostname>192-168-23-76.cloud.lan</hostname>
+    <host ip='100.64.0.76'>
+      <hostname>100-64-0-76.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.77'>
-      <hostname>192-168-23-77.cloud.lan</hostname>
+    <host ip='100.64.0.77'>
+      <hostname>100-64-0-77.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.78'>
-      <hostname>192-168-23-78.cloud.lan</hostname>
+    <host ip='100.64.0.78'>
+      <hostname>100-64-0-78.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.79'>
-      <hostname>192-168-23-79.cloud.lan</hostname>
+    <host ip='100.64.0.79'>
+      <hostname>100-64-0-79.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.80'>
-      <hostname>192-168-23-80.cloud.lan</hostname>
+    <host ip='100.64.0.80'>
+      <hostname>100-64-0-80.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.81'>
-      <hostname>192-168-23-81.cloud.lan</hostname>
+    <host ip='100.64.0.81'>
+      <hostname>100-64-0-81.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.82'>
-      <hostname>192-168-23-82.cloud.lan</hostname>
+    <host ip='100.64.0.82'>
+      <hostname>100-64-0-82.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.83'>
-      <hostname>192-168-23-83.cloud.lan</hostname>
+    <host ip='100.64.0.83'>
+      <hostname>100-64-0-83.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.84'>
-      <hostname>192-168-23-84.cloud.lan</hostname>
+    <host ip='100.64.0.84'>
+      <hostname>100-64-0-84.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.85'>
-      <hostname>192-168-23-85.cloud.lan</hostname>
+    <host ip='100.64.0.85'>
+      <hostname>100-64-0-85.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.86'>
-      <hostname>192-168-23-86.cloud.lan</hostname>
+    <host ip='100.64.0.86'>
+      <hostname>100-64-0-86.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.87'>
-      <hostname>192-168-23-87.cloud.lan</hostname>
+    <host ip='100.64.0.87'>
+      <hostname>100-64-0-87.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.88'>
-      <hostname>192-168-23-88.cloud.lan</hostname>
+    <host ip='100.64.0.88'>
+      <hostname>100-64-0-88.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.89'>
-      <hostname>192-168-23-89.cloud.lan</hostname>
+    <host ip='100.64.0.89'>
+      <hostname>100-64-0-89.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.90'>
-      <hostname>192-168-23-90.cloud.lan</hostname>
+    <host ip='100.64.0.90'>
+      <hostname>100-64-0-90.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.91'>
-      <hostname>192-168-23-91.cloud.lan</hostname>
+    <host ip='100.64.0.91'>
+      <hostname>100-64-0-91.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.92'>
-      <hostname>192-168-23-92.cloud.lan</hostname>
+    <host ip='100.64.0.92'>
+      <hostname>100-64-0-92.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.93'>
-      <hostname>192-168-23-93.cloud.lan</hostname>
+    <host ip='100.64.0.93'>
+      <hostname>100-64-0-93.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.94'>
-      <hostname>192-168-23-94.cloud.lan</hostname>
+    <host ip='100.64.0.94'>
+      <hostname>100-64-0-94.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.95'>
-      <hostname>192-168-23-95.cloud.lan</hostname>
+    <host ip='100.64.0.95'>
+      <hostname>100-64-0-95.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.96'>
-      <hostname>192-168-23-96.cloud.lan</hostname>
+    <host ip='100.64.0.96'>
+      <hostname>100-64-0-96.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.97'>
-      <hostname>192-168-23-97.cloud.lan</hostname>
+    <host ip='100.64.0.97'>
+      <hostname>100-64-0-97.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.98'>
-      <hostname>192-168-23-98.cloud.lan</hostname>
+    <host ip='100.64.0.98'>
+      <hostname>100-64-0-98.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.99'>
-      <hostname>192-168-23-99.cloud.lan</hostname>
+    <host ip='100.64.0.99'>
+      <hostname>100-64-0-99.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.100'>
-      <hostname>192-168-23-100.cloud.lan</hostname>
+    <host ip='100.64.0.100'>
+      <hostname>100-64-0-100.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.101'>
-      <hostname>192-168-23-101.cloud.lan</hostname>
+    <host ip='100.64.0.101'>
+      <hostname>100-64-0-101.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.102'>
-      <hostname>192-168-23-102.cloud.lan</hostname>
+    <host ip='100.64.0.102'>
+      <hostname>100-64-0-102.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.103'>
-      <hostname>192-168-23-103.cloud.lan</hostname>
+    <host ip='100.64.0.103'>
+      <hostname>100-64-0-103.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.104'>
-      <hostname>192-168-23-104.cloud.lan</hostname>
+    <host ip='100.64.0.104'>
+      <hostname>100-64-0-104.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.105'>
-      <hostname>192-168-23-105.cloud.lan</hostname>
+    <host ip='100.64.0.105'>
+      <hostname>100-64-0-105.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.106'>
-      <hostname>192-168-23-106.cloud.lan</hostname>
+    <host ip='100.64.0.106'>
+      <hostname>100-64-0-106.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.107'>
-      <hostname>192-168-23-107.cloud.lan</hostname>
+    <host ip='100.64.0.107'>
+      <hostname>100-64-0-107.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.108'>
-      <hostname>192-168-23-108.cloud.lan</hostname>
+    <host ip='100.64.0.108'>
+      <hostname>100-64-0-108.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.109'>
-      <hostname>192-168-23-109.cloud.lan</hostname>
+    <host ip='100.64.0.109'>
+      <hostname>100-64-0-109.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.110'>
-      <hostname>192-168-23-110.cloud.lan</hostname>
+    <host ip='100.64.0.110'>
+      <hostname>100-64-0-110.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.111'>
-      <hostname>192-168-23-111.cloud.lan</hostname>
+    <host ip='100.64.0.111'>
+      <hostname>100-64-0-111.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.112'>
-      <hostname>192-168-23-112.cloud.lan</hostname>
+    <host ip='100.64.0.112'>
+      <hostname>100-64-0-112.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.113'>
-      <hostname>192-168-23-113.cloud.lan</hostname>
+    <host ip='100.64.0.113'>
+      <hostname>100-64-0-113.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.114'>
-      <hostname>192-168-23-114.cloud.lan</hostname>
+    <host ip='100.64.0.114'>
+      <hostname>100-64-0-114.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.115'>
-      <hostname>192-168-23-115.cloud.lan</hostname>
+    <host ip='100.64.0.115'>
+      <hostname>100-64-0-115.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.116'>
-      <hostname>192-168-23-116.cloud.lan</hostname>
+    <host ip='100.64.0.116'>
+      <hostname>100-64-0-116.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.117'>
-      <hostname>192-168-23-117.cloud.lan</hostname>
+    <host ip='100.64.0.117'>
+      <hostname>100-64-0-117.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.118'>
-      <hostname>192-168-23-118.cloud.lan</hostname>
+    <host ip='100.64.0.118'>
+      <hostname>100-64-0-118.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.119'>
-      <hostname>192-168-23-119.cloud.lan</hostname>
+    <host ip='100.64.0.119'>
+      <hostname>100-64-0-119.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.120'>
-      <hostname>192-168-23-120.cloud.lan</hostname>
+    <host ip='100.64.0.120'>
+      <hostname>100-64-0-120.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.121'>
-      <hostname>192-168-23-121.cloud.lan</hostname>
+    <host ip='100.64.0.121'>
+      <hostname>100-64-0-121.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.122'>
-      <hostname>192-168-23-122.cloud.lan</hostname>
+    <host ip='100.64.0.122'>
+      <hostname>100-64-0-122.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.123'>
-      <hostname>192-168-23-123.cloud.lan</hostname>
+    <host ip='100.64.0.123'>
+      <hostname>100-64-0-123.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.124'>
-      <hostname>192-168-23-124.cloud.lan</hostname>
+    <host ip='100.64.0.124'>
+      <hostname>100-64-0-124.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.125'>
-      <hostname>192-168-23-125.cloud.lan</hostname>
+    <host ip='100.64.0.125'>
+      <hostname>100-64-0-125.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.126'>
-      <hostname>192-168-23-126.cloud.lan</hostname>
+    <host ip='100.64.0.126'>
+      <hostname>100-64-0-126.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.127'>
-      <hostname>192-168-23-127.cloud.lan</hostname>
+    <host ip='100.64.0.127'>
+      <hostname>100-64-0-127.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.128'>
-      <hostname>192-168-23-128.cloud.lan</hostname>
+    <host ip='100.64.0.128'>
+      <hostname>100-64-0-128.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.129'>
-      <hostname>192-168-23-129.cloud.lan</hostname>
+    <host ip='100.64.0.129'>
+      <hostname>100-64-0-129.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.130'>
-      <hostname>192-168-23-130.cloud.lan</hostname>
+    <host ip='100.64.0.130'>
+      <hostname>100-64-0-130.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.131'>
-      <hostname>192-168-23-131.cloud.lan</hostname>
+    <host ip='100.64.0.131'>
+      <hostname>100-64-0-131.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.132'>
-      <hostname>192-168-23-132.cloud.lan</hostname>
+    <host ip='100.64.0.132'>
+      <hostname>100-64-0-132.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.133'>
-      <hostname>192-168-23-133.cloud.lan</hostname>
+    <host ip='100.64.0.133'>
+      <hostname>100-64-0-133.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.134'>
-      <hostname>192-168-23-134.cloud.lan</hostname>
+    <host ip='100.64.0.134'>
+      <hostname>100-64-0-134.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.135'>
-      <hostname>192-168-23-135.cloud.lan</hostname>
+    <host ip='100.64.0.135'>
+      <hostname>100-64-0-135.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.136'>
-      <hostname>192-168-23-136.cloud.lan</hostname>
+    <host ip='100.64.0.136'>
+      <hostname>100-64-0-136.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.137'>
-      <hostname>192-168-23-137.cloud.lan</hostname>
+    <host ip='100.64.0.137'>
+      <hostname>100-64-0-137.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.138'>
-      <hostname>192-168-23-138.cloud.lan</hostname>
+    <host ip='100.64.0.138'>
+      <hostname>100-64-0-138.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.139'>
-      <hostname>192-168-23-139.cloud.lan</hostname>
+    <host ip='100.64.0.139'>
+      <hostname>100-64-0-139.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.140'>
-      <hostname>192-168-23-140.cloud.lan</hostname>
+    <host ip='100.64.0.140'>
+      <hostname>100-64-0-140.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.141'>
-      <hostname>192-168-23-141.cloud.lan</hostname>
+    <host ip='100.64.0.141'>
+      <hostname>100-64-0-141.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.142'>
-      <hostname>192-168-23-142.cloud.lan</hostname>
+    <host ip='100.64.0.142'>
+      <hostname>100-64-0-142.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.143'>
-      <hostname>192-168-23-143.cloud.lan</hostname>
+    <host ip='100.64.0.143'>
+      <hostname>100-64-0-143.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.144'>
-      <hostname>192-168-23-144.cloud.lan</hostname>
+    <host ip='100.64.0.144'>
+      <hostname>100-64-0-144.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.145'>
-      <hostname>192-168-23-145.cloud.lan</hostname>
+    <host ip='100.64.0.145'>
+      <hostname>100-64-0-145.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.146'>
-      <hostname>192-168-23-146.cloud.lan</hostname>
+    <host ip='100.64.0.146'>
+      <hostname>100-64-0-146.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.147'>
-      <hostname>192-168-23-147.cloud.lan</hostname>
+    <host ip='100.64.0.147'>
+      <hostname>100-64-0-147.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.148'>
-      <hostname>192-168-23-148.cloud.lan</hostname>
+    <host ip='100.64.0.148'>
+      <hostname>100-64-0-148.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.149'>
-      <hostname>192-168-23-149.cloud.lan</hostname>
+    <host ip='100.64.0.149'>
+      <hostname>100-64-0-149.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.150'>
-      <hostname>192-168-23-150.cloud.lan</hostname>
+    <host ip='100.64.0.150'>
+      <hostname>100-64-0-150.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.151'>
-      <hostname>192-168-23-151.cloud.lan</hostname>
+    <host ip='100.64.0.151'>
+      <hostname>100-64-0-151.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.152'>
-      <hostname>192-168-23-152.cloud.lan</hostname>
+    <host ip='100.64.0.152'>
+      <hostname>100-64-0-152.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.153'>
-      <hostname>192-168-23-153.cloud.lan</hostname>
+    <host ip='100.64.0.153'>
+      <hostname>100-64-0-153.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.154'>
-      <hostname>192-168-23-154.cloud.lan</hostname>
+    <host ip='100.64.0.154'>
+      <hostname>100-64-0-154.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.155'>
-      <hostname>192-168-23-155.cloud.lan</hostname>
+    <host ip='100.64.0.155'>
+      <hostname>100-64-0-155.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.156'>
-      <hostname>192-168-23-156.cloud.lan</hostname>
+    <host ip='100.64.0.156'>
+      <hostname>100-64-0-156.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.157'>
-      <hostname>192-168-23-157.cloud.lan</hostname>
+    <host ip='100.64.0.157'>
+      <hostname>100-64-0-157.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.158'>
-      <hostname>192-168-23-158.cloud.lan</hostname>
+    <host ip='100.64.0.158'>
+      <hostname>100-64-0-158.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.159'>
-      <hostname>192-168-23-159.cloud.lan</hostname>
+    <host ip='100.64.0.159'>
+      <hostname>100-64-0-159.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.160'>
-      <hostname>192-168-23-160.cloud.lan</hostname>
+    <host ip='100.64.0.160'>
+      <hostname>100-64-0-160.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.161'>
-      <hostname>192-168-23-161.cloud.lan</hostname>
+    <host ip='100.64.0.161'>
+      <hostname>100-64-0-161.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.162'>
-      <hostname>192-168-23-162.cloud.lan</hostname>
+    <host ip='100.64.0.162'>
+      <hostname>100-64-0-162.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.163'>
-      <hostname>192-168-23-163.cloud.lan</hostname>
+    <host ip='100.64.0.163'>
+      <hostname>100-64-0-163.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.164'>
-      <hostname>192-168-23-164.cloud.lan</hostname>
+    <host ip='100.64.0.164'>
+      <hostname>100-64-0-164.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.165'>
-      <hostname>192-168-23-165.cloud.lan</hostname>
+    <host ip='100.64.0.165'>
+      <hostname>100-64-0-165.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.166'>
-      <hostname>192-168-23-166.cloud.lan</hostname>
+    <host ip='100.64.0.166'>
+      <hostname>100-64-0-166.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.167'>
-      <hostname>192-168-23-167.cloud.lan</hostname>
+    <host ip='100.64.0.167'>
+      <hostname>100-64-0-167.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.168'>
-      <hostname>192-168-23-168.cloud.lan</hostname>
+    <host ip='100.64.0.168'>
+      <hostname>100-64-0-168.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.169'>
-      <hostname>192-168-23-169.cloud.lan</hostname>
+    <host ip='100.64.0.169'>
+      <hostname>100-64-0-169.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.170'>
-      <hostname>192-168-23-170.cloud.lan</hostname>
+    <host ip='100.64.0.170'>
+      <hostname>100-64-0-170.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.171'>
-      <hostname>192-168-23-171.cloud.lan</hostname>
+    <host ip='100.64.0.171'>
+      <hostname>100-64-0-171.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.172'>
-      <hostname>192-168-23-172.cloud.lan</hostname>
+    <host ip='100.64.0.172'>
+      <hostname>100-64-0-172.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.173'>
-      <hostname>192-168-23-173.cloud.lan</hostname>
+    <host ip='100.64.0.173'>
+      <hostname>100-64-0-173.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.174'>
-      <hostname>192-168-23-174.cloud.lan</hostname>
+    <host ip='100.64.0.174'>
+      <hostname>100-64-0-174.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.175'>
-      <hostname>192-168-23-175.cloud.lan</hostname>
+    <host ip='100.64.0.175'>
+      <hostname>100-64-0-175.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.176'>
-      <hostname>192-168-23-176.cloud.lan</hostname>
+    <host ip='100.64.0.176'>
+      <hostname>100-64-0-176.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.177'>
-      <hostname>192-168-23-177.cloud.lan</hostname>
+    <host ip='100.64.0.177'>
+      <hostname>100-64-0-177.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.178'>
-      <hostname>192-168-23-178.cloud.lan</hostname>
+    <host ip='100.64.0.178'>
+      <hostname>100-64-0-178.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.179'>
-      <hostname>192-168-23-179.cloud.lan</hostname>
+    <host ip='100.64.0.179'>
+      <hostname>100-64-0-179.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.180'>
-      <hostname>192-168-23-180.cloud.lan</hostname>
+    <host ip='100.64.0.180'>
+      <hostname>100-64-0-180.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.181'>
-      <hostname>192-168-23-181.cloud.lan</hostname>
+    <host ip='100.64.0.181'>
+      <hostname>100-64-0-181.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.182'>
-      <hostname>192-168-23-182.cloud.lan</hostname>
+    <host ip='100.64.0.182'>
+      <hostname>100-64-0-182.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.183'>
-      <hostname>192-168-23-183.cloud.lan</hostname>
+    <host ip='100.64.0.183'>
+      <hostname>100-64-0-183.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.184'>
-      <hostname>192-168-23-184.cloud.lan</hostname>
+    <host ip='100.64.0.184'>
+      <hostname>100-64-0-184.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.185'>
-      <hostname>192-168-23-185.cloud.lan</hostname>
+    <host ip='100.64.0.185'>
+      <hostname>100-64-0-185.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.186'>
-      <hostname>192-168-23-186.cloud.lan</hostname>
+    <host ip='100.64.0.186'>
+      <hostname>100-64-0-186.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.187'>
-      <hostname>192-168-23-187.cloud.lan</hostname>
+    <host ip='100.64.0.187'>
+      <hostname>100-64-0-187.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.188'>
-      <hostname>192-168-23-188.cloud.lan</hostname>
+    <host ip='100.64.0.188'>
+      <hostname>100-64-0-188.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.189'>
-      <hostname>192-168-23-189.cloud.lan</hostname>
+    <host ip='100.64.0.189'>
+      <hostname>100-64-0-189.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.190'>
-      <hostname>192-168-23-190.cloud.lan</hostname>
+    <host ip='100.64.0.190'>
+      <hostname>100-64-0-190.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.191'>
-      <hostname>192-168-23-191.cloud.lan</hostname>
+    <host ip='100.64.0.191'>
+      <hostname>100-64-0-191.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.192'>
-      <hostname>192-168-23-192.cloud.lan</hostname>
+    <host ip='100.64.0.192'>
+      <hostname>100-64-0-192.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.193'>
-      <hostname>192-168-23-193.cloud.lan</hostname>
+    <host ip='100.64.0.193'>
+      <hostname>100-64-0-193.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.194'>
-      <hostname>192-168-23-194.cloud.lan</hostname>
+    <host ip='100.64.0.194'>
+      <hostname>100-64-0-194.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.195'>
-      <hostname>192-168-23-195.cloud.lan</hostname>
+    <host ip='100.64.0.195'>
+      <hostname>100-64-0-195.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.196'>
-      <hostname>192-168-23-196.cloud.lan</hostname>
+    <host ip='100.64.0.196'>
+      <hostname>100-64-0-196.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.197'>
-      <hostname>192-168-23-197.cloud.lan</hostname>
+    <host ip='100.64.0.197'>
+      <hostname>100-64-0-197.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.198'>
-      <hostname>192-168-23-198.cloud.lan</hostname>
+    <host ip='100.64.0.198'>
+      <hostname>100-64-0-198.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.199'>
-      <hostname>192-168-23-199.cloud.lan</hostname>
+    <host ip='100.64.0.199'>
+      <hostname>100-64-0-199.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.200'>
-      <hostname>192-168-23-200.cloud.lan</hostname>
+    <host ip='100.64.0.200'>
+      <hostname>100-64-0-200.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.201'>
-      <hostname>192-168-23-201.cloud.lan</hostname>
+    <host ip='100.64.0.201'>
+      <hostname>100-64-0-201.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.202'>
-      <hostname>192-168-23-202.cloud.lan</hostname>
+    <host ip='100.64.0.202'>
+      <hostname>100-64-0-202.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.203'>
-      <hostname>192-168-23-203.cloud.lan</hostname>
+    <host ip='100.64.0.203'>
+      <hostname>100-64-0-203.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.204'>
-      <hostname>192-168-23-204.cloud.lan</hostname>
+    <host ip='100.64.0.204'>
+      <hostname>100-64-0-204.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.205'>
-      <hostname>192-168-23-205.cloud.lan</hostname>
+    <host ip='100.64.0.205'>
+      <hostname>100-64-0-205.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.206'>
-      <hostname>192-168-23-206.cloud.lan</hostname>
+    <host ip='100.64.0.206'>
+      <hostname>100-64-0-206.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.207'>
-      <hostname>192-168-23-207.cloud.lan</hostname>
+    <host ip='100.64.0.207'>
+      <hostname>100-64-0-207.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.208'>
-      <hostname>192-168-23-208.cloud.lan</hostname>
+    <host ip='100.64.0.208'>
+      <hostname>100-64-0-208.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.209'>
-      <hostname>192-168-23-209.cloud.lan</hostname>
+    <host ip='100.64.0.209'>
+      <hostname>100-64-0-209.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.210'>
-      <hostname>192-168-23-210.cloud.lan</hostname>
+    <host ip='100.64.0.210'>
+      <hostname>100-64-0-210.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.211'>
-      <hostname>192-168-23-211.cloud.lan</hostname>
+    <host ip='100.64.0.211'>
+      <hostname>100-64-0-211.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.212'>
-      <hostname>192-168-23-212.cloud.lan</hostname>
+    <host ip='100.64.0.212'>
+      <hostname>100-64-0-212.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.213'>
-      <hostname>192-168-23-213.cloud.lan</hostname>
+    <host ip='100.64.0.213'>
+      <hostname>100-64-0-213.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.214'>
-      <hostname>192-168-23-214.cloud.lan</hostname>
+    <host ip='100.64.0.214'>
+      <hostname>100-64-0-214.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.215'>
-      <hostname>192-168-23-215.cloud.lan</hostname>
+    <host ip='100.64.0.215'>
+      <hostname>100-64-0-215.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.216'>
-      <hostname>192-168-23-216.cloud.lan</hostname>
+    <host ip='100.64.0.216'>
+      <hostname>100-64-0-216.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.217'>
-      <hostname>192-168-23-217.cloud.lan</hostname>
+    <host ip='100.64.0.217'>
+      <hostname>100-64-0-217.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.218'>
-      <hostname>192-168-23-218.cloud.lan</hostname>
+    <host ip='100.64.0.218'>
+      <hostname>100-64-0-218.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.219'>
-      <hostname>192-168-23-219.cloud.lan</hostname>
+    <host ip='100.64.0.219'>
+      <hostname>100-64-0-219.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.220'>
-      <hostname>192-168-23-220.cloud.lan</hostname>
+    <host ip='100.64.0.220'>
+      <hostname>100-64-0-220.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.221'>
-      <hostname>192-168-23-221.cloud.lan</hostname>
+    <host ip='100.64.0.221'>
+      <hostname>100-64-0-221.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.222'>
-      <hostname>192-168-23-222.cloud.lan</hostname>
+    <host ip='100.64.0.222'>
+      <hostname>100-64-0-222.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.223'>
-      <hostname>192-168-23-223.cloud.lan</hostname>
+    <host ip='100.64.0.223'>
+      <hostname>100-64-0-223.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.224'>
-      <hostname>192-168-23-224.cloud.lan</hostname>
+    <host ip='100.64.0.224'>
+      <hostname>100-64-0-224.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.225'>
-      <hostname>192-168-23-225.cloud.lan</hostname>
+    <host ip='100.64.0.225'>
+      <hostname>100-64-0-225.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.226'>
-      <hostname>192-168-23-226.cloud.lan</hostname>
+    <host ip='100.64.0.226'>
+      <hostname>100-64-0-226.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.227'>
-      <hostname>192-168-23-227.cloud.lan</hostname>
+    <host ip='100.64.0.227'>
+      <hostname>100-64-0-227.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.228'>
-      <hostname>192-168-23-228.cloud.lan</hostname>
+    <host ip='100.64.0.228'>
+      <hostname>100-64-0-228.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.229'>
-      <hostname>192-168-23-229.cloud.lan</hostname>
+    <host ip='100.64.0.229'>
+      <hostname>100-64-0-229.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.230'>
-      <hostname>192-168-23-230.cloud.lan</hostname>
+    <host ip='100.64.0.230'>
+      <hostname>100-64-0-230.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.231'>
-      <hostname>192-168-23-231.cloud.lan</hostname>
+    <host ip='100.64.0.231'>
+      <hostname>100-64-0-231.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.232'>
-      <hostname>192-168-23-232.cloud.lan</hostname>
+    <host ip='100.64.0.232'>
+      <hostname>100-64-0-232.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.233'>
-      <hostname>192-168-23-233.cloud.lan</hostname>
+    <host ip='100.64.0.233'>
+      <hostname>100-64-0-233.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.234'>
-      <hostname>192-168-23-234.cloud.lan</hostname>
+    <host ip='100.64.0.234'>
+      <hostname>100-64-0-234.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.235'>
-      <hostname>192-168-23-235.cloud.lan</hostname>
+    <host ip='100.64.0.235'>
+      <hostname>100-64-0-235.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.236'>
-      <hostname>192-168-23-236.cloud.lan</hostname>
+    <host ip='100.64.0.236'>
+      <hostname>100-64-0-236.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.237'>
-      <hostname>192-168-23-237.cloud.lan</hostname>
+    <host ip='100.64.0.237'>
+      <hostname>100-64-0-237.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.238'>
-      <hostname>192-168-23-238.cloud.lan</hostname>
+    <host ip='100.64.0.238'>
+      <hostname>100-64-0-238.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.239'>
-      <hostname>192-168-23-239.cloud.lan</hostname>
+    <host ip='100.64.0.239'>
+      <hostname>100-64-0-239.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.240'>
-      <hostname>192-168-23-240.cloud.lan</hostname>
+    <host ip='100.64.0.240'>
+      <hostname>100-64-0-240.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.241'>
-      <hostname>192-168-23-241.cloud.lan</hostname>
+    <host ip='100.64.0.241'>
+      <hostname>100-64-0-241.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.242'>
-      <hostname>192-168-23-242.cloud.lan</hostname>
+    <host ip='100.64.0.242'>
+      <hostname>100-64-0-242.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.243'>
-      <hostname>192-168-23-243.cloud.lan</hostname>
+    <host ip='100.64.0.243'>
+      <hostname>100-64-0-243.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.244'>
-      <hostname>192-168-23-244.cloud.lan</hostname>
+    <host ip='100.64.0.244'>
+      <hostname>100-64-0-244.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.245'>
-      <hostname>192-168-23-245.cloud.lan</hostname>
+    <host ip='100.64.0.245'>
+      <hostname>100-64-0-245.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.246'>
-      <hostname>192-168-23-246.cloud.lan</hostname>
+    <host ip='100.64.0.246'>
+      <hostname>100-64-0-246.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.247'>
-      <hostname>192-168-23-247.cloud.lan</hostname>
+    <host ip='100.64.0.247'>
+      <hostname>100-64-0-247.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.248'>
-      <hostname>192-168-23-248.cloud.lan</hostname>
+    <host ip='100.64.0.248'>
+      <hostname>100-64-0-248.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.249'>
-      <hostname>192-168-23-249.cloud.lan</hostname>
+    <host ip='100.64.0.249'>
+      <hostname>100-64-0-249.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.250'>
-      <hostname>192-168-23-250.cloud.lan</hostname>
+    <host ip='100.64.0.250'>
+      <hostname>100-64-0-250.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.251'>
-      <hostname>192-168-23-251.cloud.lan</hostname>
+    <host ip='100.64.0.251'>
+      <hostname>100-64-0-251.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.252'>
-      <hostname>192-168-23-252.cloud.lan</hostname>
+    <host ip='100.64.0.252'>
+      <hostname>100-64-0-252.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.253'>
-      <hostname>192-168-23-253.cloud.lan</hostname>
+    <host ip='100.64.0.253'>
+      <hostname>100-64-0-253.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.254'>
-      <hostname>192-168-23-254.cloud.lan</hostname>
+    <host ip='100.64.0.254'>
+      <hostname>100-64-0-254.cloud.lan</hostname>
     </host>
-    <host ip='192.168.23.255'>
-      <hostname>192-168-23-255.cloud.lan</hostname>
+    <host ip='100.64.0.255'>
+      <hostname>100-64-0-255.cloud.lan</hostname>
     </host>
     <host ip='192.168.42.2'>
       <hostname>192-168-42-2.cloud.lan</hostname>
