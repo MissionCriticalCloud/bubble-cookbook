@@ -16,6 +16,7 @@ The following requirements need to be met:
 * Intel based processor that supports virtualization (Haswell or better recommended)
 * 100+GB Harddrive (for templates and sourcecode)
 * Centos 7(.2) Minimal installation (adjust disk layout to provide /data dir)
+* `/tmp` MUST be larger then 1GB (e.g. when using tmpfs), due to download of images >1GB
 
 Attributes
 ----------

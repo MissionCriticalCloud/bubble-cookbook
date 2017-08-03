@@ -26,6 +26,11 @@ directory dest_path do
 end
 
 templates.each do |dest_name, urls|
+  file "#{dest_path}/#{dest_name}.checksum" do
+    action :delete
+    not_if { ::File.exist?("#{dest_path}/#{dest_name}") }
+  end
+
   remote_file "#{dest_path}/#{dest_name}.checksum" do
     source "#{urls[:checksum]}"
     mode '0644'
@@ -62,6 +67,11 @@ jenkins_templates = {
 }
 
 jenkins_templates.each do |dest_name, urls|
+  file "#{dest_path}/#{dest_name}.checksum" do
+    action :delete
+    not_if { ::File.exist?("#{dest_path}/#{dest_name}") }
+  end
+
   remote_file "#{dest_path}/#{dest_name}.checksum" do
     source "#{urls[:checksum]}"
     mode '0644'

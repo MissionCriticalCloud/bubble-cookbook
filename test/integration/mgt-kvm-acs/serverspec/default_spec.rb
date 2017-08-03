@@ -9,8 +9,10 @@ describe 'bubble::default' do
   include_examples 'bubble::default_tests'
 
   include_examples 'bubble::deploy_cs1'
+  include_examples 'bubble::check_cs1'
 
   include_examples 'bubble::deploy_kvm1'
+  include_examples 'bubble::check_kvm1'
 
   describe command(prepare_compile) do
     its(:stdout) {should contain('Git Apache CloudStack repo already found')}
