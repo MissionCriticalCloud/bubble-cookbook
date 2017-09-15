@@ -8,7 +8,7 @@ package %w(centos-release-qemu-ev vlgothic-fonts adwaita-gtk3-theme
 
 # Extra tools
 package %w(git virt-top screen vim openssh-askpass supervisor deltarpm sshpass
-           byobu bash-completion nmap)
+           byobu bash-completion nmap zsh)
 
 # libguestfs-tools for manipulating images
 package 'libguestfs-tools'
