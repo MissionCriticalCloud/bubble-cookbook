@@ -59,10 +59,6 @@ jenkins_templates = {
     'cosmic-centos-7.qcow2' => {
         checksum: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/cosmic-centos-7.qcow2.md5',
         url: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cosmic-centos-7/packer_output/cosmic-centos-7.qcow2'
-    },
-    'cloudstack-centos-6.qcow2' => {
-        checksum: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cloudstack-centos-6/packer_output/cloudstack-centos-6.qcow2.md5',
-        url: 'https://beta-jenkins.mcc.schubergphilis.com/job/bubble-templates/job/packer-cron/lastSuccessfulBuild/artifact/cloudstack-centos-6/packer_output/cloudstack-centos-6.qcow2'
     }
 }
 
