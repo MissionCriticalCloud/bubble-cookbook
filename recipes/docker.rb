@@ -1,3 +1,8 @@
+docker_installation_package 'default' do
+  version node['bubble']['docker']['version']
+  action :create
+end
+
 # Add docker service.
 if `/usr/sbin/ip a`.include? "virbr0"
   docker_service 'default' do
@@ -99,7 +104,7 @@ cookbook_file '/etc/systemd/system/dnsthing.service' do
   notifies :restart, 'service[dnsthing]', :delayed
 end
 
-python_pip 'docker-py'
+python_package 'docker-py'
 
 # Enable and start the dnsthing server service
 service 'dnsthing' do

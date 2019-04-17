@@ -9,7 +9,7 @@ include_recipe 'bubble::softethervpn-server' if node['bubble']['softethervpn-ser
 include_recipe 'bubble::internal-templates' if node['bubble']['internal-templates']
 include_recipe 'bubble::cloudinit-metaserv' if node['bubble']['cloudinit-metaserv']
 include_recipe 'sudo' if node['bubble']['sudo']
-include_recipe 'bubble::docker' if node['bubble']['docker']
+include_recipe 'bubble::docker' if node['bubble']['docker']['install']
 include_recipe 'bubble::libvirt'
 include_recipe 'bubble::minikube' if node['bubble']['minikube']
 include_recipe 'bubble::helm' if node['bubble']['helm']
@@ -44,7 +44,7 @@ git '/data/shared' do
 end
 
 # Install python clint for kvm_local_deploy
-python_pip 'clint'
+python_package 'clint'
 
 # Disable and stop firewalld
 service "firewalld" do

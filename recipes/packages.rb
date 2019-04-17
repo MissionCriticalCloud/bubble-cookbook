@@ -42,6 +42,6 @@ package %w(mariadb-server nc nfs-utils openssh-clients openssl-devel rpm-build
 package %w(python-devel python-ecdsa python-setuptools rubygems)
 
 # AWS cli, upgrade to latest each run
-python_pip 'awscli' do
+python_package 'awscli' do
   action :upgrade
 end

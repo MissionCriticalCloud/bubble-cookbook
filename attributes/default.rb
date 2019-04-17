@@ -22,7 +22,8 @@ default['bubble']['softethervpn-psk'] = 'softether'
 default['bubble']['community-templates'] = true
 default['bubble']['cloudinit-metaserv'] = true
 default['bubble']['cloudinit-password'] = 'password'
-default['bubble']['docker'] = true
+default['bubble']['docker']['install'] = true
+default['bubble']['docker']['version'] = '18.09.3'
 
 default['bubble']['systemvm_template']['jenkins_url']  = 'https://beta-jenkins.mcc.schubergphilis.com/job/cosmic-systemvm/job/packer-build/lastSuccessfulBuild/artifact/packer_output/'
 default['bubble']['systemvm_template']['jenkins_md5']  = 'md5.txt'
@@ -44,3 +45,23 @@ default['bubble']['npm_packages'] = true
 
 # Keep settings default and allow settting at project level
 force_default['maven']['mavenrc']['opts'] = ''
+
+# setting required when also running openssh cookbook
+node.rm('openssh', 'client')
+force_default['openssh']['client'] = {
+    "strict_host_key_checking": "no",
+    "user_known_hosts_file": "/dev/null",
+    "forward_agent": "yes",
+    "cs*": {
+        "  User": "root"
+    },
+    "xen*": {
+        "  User": "root"
+    },
+    "kvm*": {
+        "  User": "root"
+    },
+    "nsx*": {
+        "  User": "admin"
+    },
+}
