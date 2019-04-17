@@ -1,6 +1,8 @@
-docker_installation_package 'default' do
-  version node['bubble']['docker']['version']
-  action :create
+if node['bubble']['docker']['install'] do
+  docker_installation_package 'default' do
+    version node['bubble']['docker']['version'] if node['bubble']['docker']['version']
+    action :create
+  end
 end
 
 # Add docker service.
