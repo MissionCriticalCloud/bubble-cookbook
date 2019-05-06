@@ -44,7 +44,7 @@ git '/data/shared' do
 end
 
 # Install python clint for kvm_local_deploy
-python_package 'clint'
+package 'python2-clint'
 
 # Disable and stop firewalld
 service "firewalld" do

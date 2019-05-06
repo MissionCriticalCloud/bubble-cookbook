@@ -1,4 +1,4 @@
-python_package 'supervisor'
+package 'supervisor'
 
 directory '/opt/cloudinit-metaserv' do
   action :create

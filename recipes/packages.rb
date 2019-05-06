@@ -23,7 +23,7 @@ package 'maven' do
 end
 include_recipe 'maven::default'
 
-package %w(python-paramiko ws-commons-util genisoimage gcc python MySQL-python
+package %w(python2-paramiko ws-commons-util genisoimage gcc python MySQL-python
            mariadb mysql-connector-python)
 
 # required java & tools
@@ -39,7 +39,7 @@ package %w(mariadb-server nc nfs-utils openssh-clients openssl-devel rpm-build
            setroubleshoot wget)
 
 # python & ruby tooling
-package %w(python-devel python-ecdsa python-setuptools rubygems)
+package %w(python2-devel python2-ecdsa python2-setuptools rubygems)
 
 # AWS cli, upgrade to latest each run
 python_package 'awscli' do
