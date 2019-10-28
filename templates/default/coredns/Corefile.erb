@@ -1,6 +1,10 @@
 .:53 {
     bind 127.0.0.1
-    file /home/coredns/docker.cloud.lan docker.cloud.lan
-    proxy . <%= @nameserver %>
-    log stdout
+    <% if @domain_list && !@domain_list.emtpy? -%>
+        <% @domain_list.each do |domain| -%>
+    file /home/coredns/<%= domain %> <%= domain %>
+        <% end -%>
+    <% end -%>
+    forward . <%= `A=\`cat /etc/resolv.conf | grep -i nameserver | tail -n1 | awk '{print $2}'\`; A+=':53'; echo $A` -%>
+    log
 }

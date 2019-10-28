@@ -26,6 +26,8 @@ default['bubble']['cloudinit-password'] = 'password'
 default['bubble']['docker']['install'] = false
 default['bubble']['docker']['version'] = '18.09.5'
 
+default['bubble']['coredns']['url'] = 'https://github.com/coredns/coredns/releases/download/v1.6.4/coredns_1.6.4_linux_amd64.tgz'
+
 default['bubble']['systemvm_template']['jenkins_url']  = 'https://beta-jenkins.mcc.schubergphilis.com/job/cosmic-systemvm/job/packer-build/lastSuccessfulBuild/artifact/packer_output/'
 default['bubble']['systemvm_template']['jenkins_md5']  = 'md5.txt'
 default['bubble']['systemvm_template']['internal_md5'] = 'cosmic-systemvm_md5.txt'

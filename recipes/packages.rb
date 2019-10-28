@@ -45,3 +45,5 @@ package %w(python2-devel python2-ecdsa python2-setuptools rubygems)
 package 'awscli' do
   action :upgrade
 end
+
+python_package 'pyyaml'
