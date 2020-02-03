@@ -1,6 +1,6 @@
 .:53 {
     bind 127.0.0.1
     file /home/coredns/docker.cloud.lan docker.cloud.lan
-    proxy . <%= `A=\`cat /etc/resolv.conf | grep -i nameserver | tail -n1 | awk '{print $2}'\`; A+=':53'; echo $A` -%>
+    proxy . <%= shell_out('A=\`cat /etc/resolv.conf | grep -i nameserver | tail -n1 | awk '{print $2}'\`; A+=':53'; echo $A') -%>
     log stdout
 }

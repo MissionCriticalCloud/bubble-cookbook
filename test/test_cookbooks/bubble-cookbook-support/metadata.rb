@@ -6,5 +6,4 @@ description      'Test cookbook'
 long_description 'Test cookbook'
 version          '1.0.0'
 
-
 depends          'bubble'

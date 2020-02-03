@@ -25,7 +25,7 @@ cookbook_file '/etc/ssh/ssh_config' do
 end
 
 # Create base directory structure on /data
-%w( /data/iso /data/images /data/git ).each do |path|
+%w( /data/iso /data/images /data/git /data/shared ).each do |path|
   directory path do
     owner 'root'
     group node['bubble']['group_name']
@@ -38,7 +38,8 @@ end
 # Sync the MCT shared repository
 git '/data/shared' do
   repository 'https://github.com/MissionCriticalCloud/bubble-toolkit.git'
-  revision 'master'
+  # revision 'master'
+  revision node['bubble']['toolkit']['branch']
   group node['bubble']['group_name']
   action :sync
 end
@@ -47,6 +48,6 @@ end
 package 'python2-clint'
 
 # Disable and stop firewalld
-service "firewalld" do
+service 'firewalld' do
   action [ :disable, :stop ]
 end

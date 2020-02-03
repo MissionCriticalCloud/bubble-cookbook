@@ -21,7 +21,7 @@ end
 
 bash 'kubectl_tabcompletion' do
   code 'echo "source <(kubectl completion bash)" >> /etc/bashrc'
-  not_if { `cat /etc/bashrc`.include? 'source <(kubectl completion bash)' }
+  not_if { File.read('/etc/bashrc').include?('source <(kubectl completion bash)') }
 end
 
 # Import libvirt configurations
@@ -35,7 +35,7 @@ end
 
 bash 'Configure_docker-machines_network' do
   user 'root'
-  cwd "#{tmp_loc}"
+  cwd tmp_loc.to_s
   code <<-EOH
   virsh net-define net_docker-machines.xml
   virsh net-start docker-machines

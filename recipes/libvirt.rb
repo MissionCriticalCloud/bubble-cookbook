@@ -42,7 +42,7 @@ end
 template '/etc/polkit-1/localauthority/50-local.d/50-libvirt.pkla' do
   source '50-libvirt.pkla.erb'
   variables(
-      group_name: node['bubble']['group_name']
+    group_name: node['bubble']['group_name']
   )
 end
 
