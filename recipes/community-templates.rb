@@ -10,10 +10,6 @@ templates = {
     checksum: 'http://dl.openvm.eu/cloudstack/macchinina/x86_64/sha1sum.txt',
     url: 'http://dl.openvm.eu/cloudstack/macchinina/x86_64/macchinina-kvm.qcow2.bz2',
   },
-  'systemvm64template-master-4.6.0-kvm.qcow2.bz2' => {
-    checksum: 'https://cloudstack.o.auroraobjects.eu/systemvmtemplate/md5sum.txt',
-    url: 'https://cloudstack.o.auroraobjects.eu/systemvmtemplate/systemvm64template-master-4.6.0-kvm.qcow2.bz2',
-  },
 }
 
 # Create base directory for templates
