@@ -11,7 +11,7 @@
   directory path do
     owner 'root'
     group node['bubble']['group_name']
-    mode '0755'
+    mode '0775'
     action :create
     recursive true
   end

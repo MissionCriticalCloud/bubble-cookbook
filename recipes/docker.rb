@@ -1,21 +1,20 @@
-if node['bubble']['docker']['install'] do
-  docker_installation_package 'default' do
-    version node['bubble']['docker']['version'] if node['bubble']['docker']['version']
-    action :create
-  end
+docker_installation_package 'default' do
+  version node['bubble']['docker']['version'] if node['bubble']['docker']['version']
+  action :create
+  only_if { node['bubble']['docker']['install'] }
 end
 
 # Add docker service.
-if `/usr/sbin/ip a`.include? "virbr0"
-  docker_service 'default' do
-    host ['unix:///var/run/docker.sock', 'tcp://127.0.0.1:2375']
-    group node['bubble']['group_name']
-    bridge 'virbr0'
-    fixed_cidr '192.168.22.224/27'
-    action [:create, :start]
-    notifies :create, 'cookbook_file[/opt/bin/dnsthing.py]'
-    notifies :create, 'cookbook_file[/etc/systemd/system/dnsthing.service]'
-  end
+interfaces = shell_out('/usr/sbin/ip a')
+docker_service 'default' do
+  host ['unix:///var/run/docker.sock', 'tcp://127.0.0.1:2375']
+  group node['bubble']['group_name']
+  bridge 'virbr0'
+  fixed_cidr '192.168.22.224/27'
+  action [:create, :start]
+  notifies :create, 'cookbook_file[/opt/bin/dnsthing.py]'
+  notifies :create, 'cookbook_file[/etc/systemd/system/dnsthing.service]'
+  only_if { interfaces.stdout.include? 'virbr0' }
 end
 
 # Add a user for coredns
@@ -53,6 +52,7 @@ directory '/etc/coredns' do
 end
 
 # Add coredns config
+nameserver = File.readlines('/etc/resolv.conf').select { |line| line =~ /nameserver/ }.last.split[1] + ':53'
 template '/etc/coredns/Corefile' do
   source 'coredns/Corefile.erb'
   owner 'coredns'
@@ -60,6 +60,9 @@ template '/etc/coredns/Corefile' do
   mode '0755'
   action :create
   notifies :restart, 'service[coredns]', :delayed
+  variables(
+    nameserver: nameserver
+  )
 end
 
 # Install systemd service for coredns server
@@ -106,7 +109,7 @@ cookbook_file '/etc/systemd/system/dnsthing.service' do
   notifies :restart, 'service[dnsthing]', :delayed
 end
 
-python_package 'docker-py'
+package 'python-docker-py'
 
 # Enable and start the dnsthing server service
 service 'dnsthing' do

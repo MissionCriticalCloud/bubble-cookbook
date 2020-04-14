@@ -15,14 +15,14 @@ describe 'bubble::default' do
   include_examples 'bubble::check_kvm1'
 
   describe command(prepare_compile) do
-    its(:stdout) {should contain('Git Apache CloudStack repo already found')}
-    its(:stdout) {should contain('/data/git/cs1/cloudstack')}
+    its(:stdout) { should contain('Git Apache CloudStack repo already found') }
+    its(:stdout) { should contain('/data/git/cs1/cloudstack') }
   end
 
   describe command(build_run_deploy_test) do
-    its(:stdout) {should contain('====Deploy DC Successful=====')}
-    its(:stdout) {should contain('All templates are ready!')}
-    its(:stdout) {should contain('Finished')}
+    its(:stdout) { should contain('====Deploy DC Successful=====') }
+    its(:stdout) { should contain('All templates are ready!') }
+    its(:stdout) { should contain('Finished') }
   end
 
   describe command(keep_running) do

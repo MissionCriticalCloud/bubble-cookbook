@@ -4,7 +4,7 @@ tmp_loc = Chef::Config[:file_cache_path]
 remote_file "#{tmp_loc}/helm.tar.gz" do
   source node['bubble']['helm_download_url']
   backup false
-  notifies  :run, 'execute[Extract helm package]', :immediately
+  notifies :run, 'execute[Extract helm package]', :immediately
 end
 
 execute 'Extract helm package' do
@@ -25,5 +25,5 @@ end
 
 bash 'helm_tabcompletion' do
   code 'echo "source <(helm completion)" >> /etc/bashrc'
-  not_if { `cat /etc/bashrc`.include? 'source <(helm completion)' }
+  not_if { File.read('/etc/bashrc').include?('source <(helm completion)') }
 end

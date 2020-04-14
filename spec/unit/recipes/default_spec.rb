@@ -8,12 +8,12 @@ require 'spec_helper'
 
 describe 'bubble::default' do
   before(:each) do
-    stub_command("which sudo").and_return('/usr/bin/sudo')
+    stub_command('which sudo').and_return('/usr/bin/sudo')
   end
 
   context 'When all attributes are default, on an unspecified platform' do
     cached(:chef_run) do
-      runner = ChefSpec::ServerRunner.new(
+      ChefSpec::ServerRunner.new(
         log_level: :warn,
         platform: 'centos',
         version: '7.1.1503',
