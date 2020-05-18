@@ -10,7 +10,7 @@ default['authorization']['sudo']['command_aliases'] = []
 # Customize chef-run
 default['bubble']['users_databag'] = 'users'
 default['bubble']['group_name'] = 'bubble'
-default['bubble']['toolkit']['branch'] = 'v1.0'
+default['bubble']['toolkit']['branch'] = 'master'
 default['bubble']['packages'] = true
 default['bubble']['users'] = true
 default['bubble']['sudo'] = true
