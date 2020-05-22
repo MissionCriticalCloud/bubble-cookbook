@@ -22,7 +22,7 @@ cookbook_file '/etc/ssh/ssh_config' do
   source 'ssh/ssh_config'
   owner 'root'
   group 'root'
-  mode 0644
+  mode '0644'
 end
 
 # Create base directory structure on /data

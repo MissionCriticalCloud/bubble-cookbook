@@ -37,14 +37,18 @@ directory '/etc/coredns' do
 end
 
 # Add coredns config
+name_server = File.readlines('/etc/resolv.conf').select { |line| line =~ /nameserver/ }.last.split[1] + ':53'
+domain_list = []
+domain_list = ['docker.cloud.lan'] if node['bubble']['docker']['install']
 template '/etc/coredns/Corefile' do
   source 'coredns/Corefile.erb'
   owner 'coredns'
   group node['bubble']['group_name']
   mode '0755'
   variables(
-    domain_list: ['docker.cloud.lan']
-  ) if node['bubble']['docker']['install']
+    name_server: name_server,
+    domain_list: domain_list
+  )
   action :create
   notifies :restart, 'service[coredns]', :delayed
 end

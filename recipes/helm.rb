@@ -18,7 +18,7 @@ remote_file 'Copy helm binary' do
   source "file://#{tmp_loc}/linux-amd64/helm"
   owner 'root'
   group 'root'
-  mode 0755
+  mode '0755'
   backup false
   action :nothing
 end
