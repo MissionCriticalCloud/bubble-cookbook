@@ -29,7 +29,7 @@ cookbook_file "#{tmp_loc}/net_docker-machines.xml" do
   source 'libvirt/net_docker-machines.xml'
   owner 'root'
   group 'root'
-  mode 00644
+  mode '0644'
   not_if { ::File.exist?('/etc/libvirt/qemu/networks/docker-machines.xml') }
 end
 

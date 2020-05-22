@@ -10,6 +10,7 @@ include_recipe 'bubble::internal-templates' if node['bubble']['internal-template
 include_recipe 'bubble::cloudinit-metaserv' if node['bubble']['cloudinit-metaserv']
 include_recipe 'sudo' if node['bubble']['sudo']
 include_recipe 'bubble::docker' if node['bubble']['docker']['install']
+include_recipe 'bubble::coredns'
 include_recipe 'bubble::libvirt'
 include_recipe 'bubble::minikube' if node['bubble']['minikube']
 include_recipe 'bubble::helm' if node['bubble']['helm']
@@ -21,7 +22,7 @@ cookbook_file '/etc/ssh/ssh_config' do
   source 'ssh/ssh_config'
   owner 'root'
   group 'root'
-  mode 0644
+  mode '0644'
 end
 
 # Create base directory structure on /data

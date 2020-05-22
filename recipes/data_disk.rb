@@ -5,7 +5,7 @@ disk_device = node['bubble']['data_disk_device']
 directory '/data' do
   owner 'root'
   group node['bubble']['group_name']
-  mode 0775
+  mode '0775'
   recursive true
   action :create
 end

@@ -20,5 +20,5 @@ remote_file 'move_terraform_binary' do
   source "file://#{tmp_loc}/terraform"
   owner 'root'
   group 'root'
-  mode 0755
+  mode '0755'
 end

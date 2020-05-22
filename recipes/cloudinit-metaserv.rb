@@ -8,7 +8,7 @@ cookbook_file '/opt/cloudinit-metaserv/cloud-meta.py' do
   source 'cloudinit-metaserv/cloud-meta.py'
   owner 'root'
   group 'root'
-  mode 00644
+  mode '0644'
   action :create_if_missing
 end
 

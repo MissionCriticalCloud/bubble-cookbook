@@ -13,7 +13,7 @@ cookbook_file '/etc/modprobe.d/kvm-nested.conf' do
   source 'kvm/kvm-nested.conf'
   owner 'root'
   group 'root'
-  mode 00644
+  mode '0644'
 end
 
 # Copy virbr0.50 and vpn tap device vlan network configuration
@@ -26,7 +26,7 @@ cookbook_file '/etc/rc.local' do
   source 'rc.local/rc.local'
   owner 'root'
   group 'root'
-  mode 0755
+  mode '0755'
 end
 
 # Copy dhclient.conf to resolve via the libvirt dns
@@ -34,7 +34,7 @@ cookbook_file '/etc/dhcp/dhclient.conf' do
   source 'dhcp/dhclient.conf'
   owner 'root'
   group 'root'
-  mode 00644
+  mode '0644'
   action :create_if_missing
 end
 
@@ -51,7 +51,7 @@ cookbook_file '/etc/profile.d/libvirt.sh' do
   source 'profile.d/libvirt.sh'
   owner 'root'
   group 'root'
-  mode 0755
+  mode '0755'
   action :create_if_missing
 end
 
