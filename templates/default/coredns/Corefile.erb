@@ -1,6 +1,6 @@
 .:53 {
     bind 127.0.0.1
-    <% if @domain_list && !@domain_list.emtpy? -%>
+    <% if @domain_list && !@domain_list.empty? -%>
         <% @domain_list.each do |domain| -%>
     file /home/coredns/<%= domain %> <%= domain %>
         <% end -%>
