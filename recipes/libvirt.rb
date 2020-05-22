@@ -4,9 +4,6 @@ tmp_loc = Chef::Config[:file_cache_path]
 # Copy KVM configuration files
 remote_directory "/#{tmp_loc}/libvirt" do
   source 'libvirt'
-
-  # Let users reboot bubble at their own discretion.
-  notifies :run, 'bash[Configure_libvirt_define_only]'
 end
 
 cookbook_file '/etc/modprobe.d/kvm-nested.conf' do
@@ -78,7 +75,6 @@ bash 'Configure_NAT_network' do
   virsh net-autostart NAT
   EOH
   not_if { ::File.exist?('/etc/libvirt/qemu/networks/NAT.xml') }
-  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 bash 'Configure_default_images_dir' do
@@ -88,12 +84,11 @@ bash 'Configure_default_images_dir' do
    virsh pool-destroy default
    virsh pool-undefine default
    virsh pool-define pool_images.xml
-   virsh pool-autostart default
    virsh pool-build default
    virsh pool-start default
+   virsh pool-autostart default
   EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/default.xml') }
-  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
 bash 'Configure_default_iso_dir' do
@@ -102,26 +97,21 @@ bash 'Configure_default_iso_dir' do
   code <<-EOH
    virsh pool-destroy iso
    virsh pool-define pool_iso.xml
-   virsh pool-autostart iso
    virsh pool-build iso
    virsh pool-start iso
+   virsh pool-autostart iso
   EOH
   not_if { ::File.exist?('/etc/libvirt/storage/autostart/iso.xml') }
-  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
 
-# Import libvirt configurations define only
-bash 'Configure_libvirt_define_only' do
-  user 'root'
-  cwd "/#{tmp_loc}/libvirt"
-  code <<-EOH
-  virsh net-define net_NAT.xml
-  virsh pool-define pool_images.xml
-  virsh pool-define pool_iso.xml
-  EOH
-  action :nothing
-end
-
-reboot 'Reboot for networking' do
-  action :nothing
+# Remove unwanted docker network if Docker is not installed
+if !node['bubble']['docker']['install']
+  bash 'Configure_docker-machines_network' do
+    user 'root'
+    code <<-EOH
+    virsh net-destroy docker-machines
+    virsh net-undefine docker-machines
+    EOH
+    only_if { ::File.exist?('/etc/libvirt/qemu/networks/docker-machines.xml') }
+  end
 end

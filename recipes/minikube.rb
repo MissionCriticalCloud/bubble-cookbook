@@ -24,23 +24,13 @@ bash 'kubectl_tabcompletion' do
   not_if { File.read('/etc/bashrc').include?('source <(kubectl completion bash)') }
 end
 
-# Import libvirt configurations
-cookbook_file "#{tmp_loc}/net_docker-machines.xml" do
-  source 'libvirt/net_docker-machines.xml'
-  owner 'root'
-  group 'root'
-  mode '0644'
-  not_if { ::File.exist?('/etc/libvirt/qemu/networks/docker-machines.xml') }
-end
-
 bash 'Configure_docker-machines_network' do
   user 'root'
-  cwd tmp_loc.to_s
+  cwd "/#{tmp_loc}/libvirt"
   code <<-EOH
   virsh net-define net_docker-machines.xml
   virsh net-start docker-machines
   virsh net-autostart docker-machines
   EOH
   not_if { ::File.exist?('/etc/libvirt/qemu/networks/docker-machines.xml') }
-  notifies :request_reboot, 'reboot[Reboot for networking]', :delayed
 end
