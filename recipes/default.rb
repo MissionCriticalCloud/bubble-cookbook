@@ -1,6 +1,5 @@
 # Recipes controlled by attributes
 include_recipe 'bubble::packages' if node['bubble']['packages']
-group node['bubble']['group_name']
 include_recipe 'bubble::users' if node['bubble']['users']
 include_recipe 'bubble::data_disk' if node['bubble']['data_disk']
 include_recipe 'bubble::nfs' if node['bubble']['nfs']
