@@ -1,0 +1,207 @@
+<!--
+WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
+OVERWRITTEN AND LOST. Changes to this xml con9figuration should be made using:
+  virsh net-edit ZONE2
+or other application using the libvirt API.
+-->
+
+<network>
+  <name>ZONE2</name>
+  <uuid>536c9547-2b79-4b18-83c2-ac029a480d1b</uuid>
+  <bridge name='virbr1' stp='on' delay='0' />
+  <mtu size="1600"/>
+  <mac address='52:54:00:d6:2f:e1' />
+  <domain name='cloud.lan' />
+  <dns>
+    <forwarder addr='127.0.0.1' />
+    <host ip='192.168.23.20'>
+      <hostname>kvm90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.21'>
+      <hostname>kvm91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.22'>
+      <hostname>kvm92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.23'>
+      <hostname>kvm93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.24'>
+      <hostname>kvm94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.25'>
+      <hostname>kvm95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.26'>
+      <hostname>kvm96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.27'>
+      <hostname>kvm97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.28'>
+      <hostname>kvm98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.29'>
+      <hostname>kvm99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.60'>
+      <hostname>cs90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.61'>
+      <hostname>cs91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.62'>
+      <hostname>cs92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.63'>
+      <hostname>cs93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.64'>
+      <hostname>cs94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.65'>
+      <hostname>cs95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.66'>
+      <hostname>cs96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.67'>
+      <hostname>cs97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.68'>
+      <hostname>cs98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.69'>
+      <hostname>cs99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.70'>
+      <hostname>db90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.71'>
+      <hostname>db91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.72'>
+      <hostname>db92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.73'>
+      <hostname>db93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.74'>
+      <hostname>db94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.75'>
+      <hostname>db95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.76'>
+      <hostname>db96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.77'>
+      <hostname>db97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.78'>
+      <hostname>db98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.79'>
+      <hostname>db99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.80'>
+      <hostname>nsxmgr91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.81'>
+      <hostname>nsxmgr92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.82'>
+      <hostname>nsxmgr93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.83'>
+      <hostname>nsxcon91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.84'>
+      <hostname>nsxcon92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.85'>
+      <hostname>nsxcon93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.86'>
+      <hostname>nsxcon94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.87'>
+      <hostname>nsxcon95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.88'>
+      <hostname>nsxcon96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.89'>
+      <hostname>nsxsvc91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.90'>
+      <hostname>nsxsvc92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.91'>
+      <hostname>nsxsvc93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.92'>
+      <hostname>nsxsvc94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.93'>
+      <hostname>nsxsvc95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.94'>
+      <hostname>nsxsvc96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.95'>
+      <hostname>sdn91.cloud.lan</hostname>
+    </host>
+  </dns>
+  <ip address='192.168.23.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.23.2' end='192.168.23.239' />
+      <host mac='52:54:00:3a:ef:20' name='kvm90' ip='192.168.23.20' />
+      <host mac='52:54:00:3a:ef:21' name='kvm91' ip='192.168.23.21' />
+      <host mac='52:54:00:3a:ef:22' name='kvm92' ip='192.168.23.22' />
+      <host mac='52:54:00:3a:ef:23' name='kvm93' ip='192.168.23.23' />
+      <host mac='52:54:00:3a:ef:24' name='kvm94' ip='192.168.23.24' />
+      <host mac='52:54:00:3a:ef:25' name='kvm95' ip='192.168.23.25' />
+      <host mac='52:54:00:3a:ef:26' name='kvm96' ip='192.168.23.26' />
+      <host mac='52:54:00:3a:ef:27' name='kvm97' ip='192.168.23.27' />
+      <host mac='52:54:00:3a:ef:28' name='kvm98' ip='192.168.23.28' />
+      <host mac='52:54:00:3a:ef:29' name='kvm99' ip='192.168.23.29' />
+      <host mac='52:54:00:3a:ef:60' name='cs90' ip='192.168.23.60' />
+      <host mac='52:54:00:3a:ef:61' name='cs91' ip='192.168.23.61' />
+      <host mac='52:54:00:3a:ef:62' name='cs92' ip='192.168.23.62' />
+      <host mac='52:54:00:3a:ef:63' name='cs93' ip='192.168.23.63' />
+      <host mac='52:54:00:3a:ef:64' name='cs94' ip='192.168.23.64' />
+      <host mac='52:54:00:3a:ef:65' name='cs95' ip='192.168.23.65' />
+      <host mac='52:54:00:3a:ef:66' name='cs96' ip='192.168.23.66' />
+      <host mac='52:54:00:3a:ef:67' name='cs97' ip='192.168.23.67' />
+      <host mac='52:54:00:3a:ef:68' name='cs98' ip='192.168.23.68' />
+      <host mac='52:54:00:3a:ef:69' name='cs99' ip='192.168.23.69' />
+      <host mac='52:54:00:3a:ef:70' name='db90' ip='192.168.23.70' />
+      <host mac='52:54:00:3a:ef:71' name='db91' ip='192.168.23.71' />
+      <host mac='52:54:00:3a:ef:72' name='db92' ip='192.168.23.72' />
+      <host mac='52:54:00:3a:ef:73' name='db93' ip='192.168.23.73' />
+      <host mac='52:54:00:3a:ef:74' name='db94' ip='192.168.23.74' />
+      <host mac='52:54:00:3a:ef:75' name='db95' ip='192.168.23.75' />
+      <host mac='52:54:00:3a:ef:76' name='db96' ip='192.168.23.76' />
+      <host mac='52:54:00:3a:ef:77' name='db97' ip='192.168.23.77' />
+      <host mac='52:54:00:3a:ef:78' name='db98' ip='192.168.23.78' />
+      <host mac='52:54:00:3a:ef:79' name='db99' ip='192.168.23.79' />
+      <host mac='52:54:00:3a:ef:80' name='nsxmgr91' ip='192.168.23.80' />
+      <host mac='52:54:00:3a:ef:81' name='nsxmgr92' ip='192.168.23.81' />
+      <host mac='52:54:00:3a:ef:82' name='nsxmgr93' ip='192.168.23.82' />
+      <host mac='52:54:00:3a:ef:83' name='nsxcon91' ip='192.168.23.83' />
+      <host mac='52:54:00:3a:ef:84' name='nsxcon92' ip='192.168.23.84' />
+      <host mac='52:54:00:3a:ef:85' name='nsxcon93' ip='192.168.23.85' />
+      <host mac='52:54:00:3a:ef:86' name='nsxcon94' ip='192.168.23.86' />
+      <host mac='52:54:00:3a:ef:87' name='nsxcon95' ip='192.168.23.87' />
+      <host mac='52:54:00:3a:ef:88' name='nsxcon96' ip='192.168.23.88' />
+      <host mac='52:54:00:3a:ef:89' name='nsxsvc91' ip='192.168.23.89' />
+      <host mac='52:54:00:3a:ef:90' name='nsxsvc92' ip='192.168.23.90' />
+      <host mac='52:54:00:3a:ef:91' name='nsxsvc93' ip='192.168.23.91' />
+      <host mac='52:54:00:3a:ef:92' name='nsxsvc94' ip='192.168.23.92' />
+      <host mac='52:54:00:3a:ef:93' name='nsxsvc95' ip='192.168.23.93' />
+      <host mac='52:54:00:3a:ef:94' name='nsxsvc96' ip='192.168.23.94' />
+      <host mac='52:54:00:3a:ef:95' name='sdn91' ip='192.168.23.95' />
+    </dhcp>
+  </ip>
+</network>

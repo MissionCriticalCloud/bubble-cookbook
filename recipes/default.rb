@@ -36,7 +36,7 @@ git '/data/shared' do
   revision node['bubble']['toolkit']['branch']
   group node['bubble']['group_name']
   action :sync
-  only_if node['bubble']['toolkit']['git_sync']
+  only_if { node['bubble']['toolkit']['git_sync'] }
 end
 
 # Install python clint for kvm_local_deploy

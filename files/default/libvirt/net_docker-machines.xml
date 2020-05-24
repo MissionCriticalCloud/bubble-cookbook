@@ -1,7 +1,7 @@
 <network>
   <name>docker-machines</name>
   <uuid>32a01aff-6ddc-4554-ac86-4e42bc539876</uuid>
-  <bridge name='virbr1' stp='on' delay='0'/>
+  <bridge name='virbr2' stp='on' delay='0'/>
   <mac address='52:54:00:a6:21:20'/>
   <ip address='192.168.42.1' netmask='255.255.255.0'>
     <dhcp>
