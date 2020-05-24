@@ -19,7 +19,7 @@ remote_directory '/etc/sysconfig/network-scripts' do
 end
 
 # Copy rc.local for delayed initialization of virbr0.50 and vpn interface
-cookbook_file '/etc/rc.local' do
+cookbook_file '/etc/rc.d/rc.local' do
   source 'rc.local/rc.local'
   owner 'root'
   group 'root'
@@ -75,6 +75,17 @@ bash 'Configure_NAT_network' do
   virsh net-autostart NAT
   EOH
   not_if { ::File.exist?('/etc/libvirt/qemu/networks/NAT.xml') }
+end
+
+bash 'Configure_ZONE2_network' do
+  user 'root'
+  cwd "/#{tmp_loc}/libvirt"
+  code <<-EOH
+  virsh net-define net_ZONE2.xml
+  virsh net-start ZONE2
+  virsh net-autostart ZONE2
+  EOH
+  not_if { ::File.exist?('/etc/libvirt/qemu/networks/ZONE2.xml') }
 end
 
 bash 'Configure_default_images_dir' do
