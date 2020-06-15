@@ -31,6 +31,13 @@ end
 # Add coredns config
 name_server = node['bubble']['coredns']['name_server']
 
+directory '/etc/coredns' do
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+
 domain_list = []
 domain_list = ['docker.cloud.lan'] if node['bubble']['docker']['install']
 template '/etc/coredns/Corefile' do
