@@ -7,6 +7,11 @@ default['authorization']['sudo']['agent_forwarding'] = true
 default['authorization']['sudo']['sudoers_defaults'] = ['!lecture,tty_tickets,!fqdn']
 default['authorization']['sudo']['command_aliases'] = []
 
+# DNS
+default['resolver']['nameservers'] = ['192.168.22.1']
+default['resolver']['search'] = 'cloud.lan'
+default['bubble']['coredns']['name_server'] = '8.8.8.8:53 8.8.4.4:53'
+
 # Customize chef-run
 default['bubble']['users_databag'] = 'users'
 default['bubble']['group_name'] = 'bubble'

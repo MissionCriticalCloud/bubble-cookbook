@@ -1,10 +1,15 @@
 .:53 {
+    loop
     bind 127.0.0.1
     <% if @domain_list && !@domain_list.empty? -%>
         <% @domain_list.each do |domain| -%>
     file /home/coredns/<%= domain %> <%= domain %>
         <% end -%>
     <% end -%>
-    forward . <%= @name_server %>
+    forward . <%= @name_server %> {
+        except cloud.lan
+    }
     log
+    errors
+    cache
 }

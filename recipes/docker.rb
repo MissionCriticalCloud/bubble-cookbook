@@ -12,13 +12,13 @@ docker_service 'default' do
   bridge 'virbr0'
   fixed_cidr '192.168.22.224/27'
   action [:create, :start]
-  notifies :create, 'cookbook_file[/opt/bin/dnsthing.py]'
+  notifies :create, 'cookbook_file[/opt/coredns/dnsthing.py]'
   notifies :create, 'cookbook_file[/etc/systemd/system/dnsthing.service]'
   only_if { interfaces.stdout.include? 'virbr0' }
 end
 
 # Add dnsthing binary
-cookbook_file '/opt/bin/dnsthing.py' do
+cookbook_file '/opt/coredns/dnsthing.py' do
   source 'coredns/dnsthing.py'
   owner 'coredns'
   group node['bubble']['group_name']

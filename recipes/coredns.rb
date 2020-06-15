@@ -8,7 +8,7 @@ user 'coredns' do
 end
 
 # Create directory for coredns binary
-directory '/opt/bin' do
+directory '/opt/coredns' do
   owner 'root'
   group 'root'
   mode '0755'
@@ -18,26 +18,19 @@ end
 # Add coredns binary from github releases
 tar_extract node['bubble']['coredns']['url'] do
   action :extract
-  target_dir '/opt/bin/'
-  creates '/opt/bin/coredns'
+  target_dir '/opt/coredns/'
+  creates '/opt/coredns/coredns'
 end
 
-file '/opt/bin/coredns' do
+file '/opt/coredns/coredns' do
   owner 'coredns'
   group node['bubble']['group_name']
   mode '0755'
-end
-
-# Create directory for coredns config
-directory '/etc/coredns' do
-  owner 'coredns'
-  group node['bubble']['group_name']
-  mode '0755'
-  action :create
 end
 
 # Add coredns config
-name_server = File.readlines('/etc/resolv.conf').select { |line| line =~ /nameserver/ }.last.split[1] + ':53'
+name_server = node['bubble']['coredns']['name_server']
+
 domain_list = []
 domain_list = ['docker.cloud.lan'] if node['bubble']['docker']['install']
 template '/etc/coredns/Corefile' do

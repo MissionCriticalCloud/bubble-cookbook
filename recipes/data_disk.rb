@@ -1,10 +1,11 @@
 # The device of the external disk (e.g. /dev/hdb)
 disk_device = node['bubble']['data_disk_device']
 
+group = node['bubble']['group_name']
 # Create Data directory to mount
 directory '/data' do
   owner 'root'
-  group node['bubble']['group_name']
+  group group
   mode '0775'
   recursive true
   action :create
@@ -30,4 +31,10 @@ mount '/data' do
   device "/dev/#{disk_device}1"
   fstype 'ext4'
   action [:mount, :enable]
+end
+
+execute "chown-chmod-data" do
+  command "chown -R root:#{group} /data;chmod -R g=u /data"
+  user "root"
+  action :run
 end

@@ -2,8 +2,25 @@
 tmp_loc = Chef::Config[:file_cache_path]
 
 # Copy KVM configuration files
-remote_directory "/#{tmp_loc}/libvirt" do
-  source 'libvirt'
+# default networks
+%w(NAT ZONE2).each do |network|
+  cookbook_file "/#{tmp_loc}/libvirt/net_#{network}.xml" do
+    source "libvirt/net_#{network}.xml"
+    owner 'root'
+    group 'root'
+    mode '0644'
+    notifies :run, "bash[update_#{network}_network]", :immediately
+  end
+end
+
+# additional files without update function
+%w(net_docker-machines.xml pool_images.xml pool_iso.xml).each do |xml_file|
+  cookbook_file "/#{tmp_loc}/libvirt/#{xml_file}" do
+    source "libvirt/#{xml_file}"
+    owner 'root'
+    group 'root'
+    mode '0644'
+  end
 end
 
 cookbook_file '/etc/modprobe.d/kvm-nested.conf' do
@@ -116,7 +133,7 @@ bash 'Configure_default_iso_dir' do
 end
 
 # Remove unwanted docker network if Docker is not installed
-if !node['bubble']['docker']['install']
+unless node['bubble']['docker']['install']
   bash 'Configure_docker-machines_network' do
     user 'root'
     code <<-EOH
@@ -125,4 +142,29 @@ if !node['bubble']['docker']['install']
     EOH
     only_if { ::File.exist?('/etc/libvirt/qemu/networks/docker-machines.xml') }
   end
+end
+
+# Bash blocks to update the networks if changed
+bash 'update_NAT_network' do
+  user 'root'
+  cwd "/#{tmp_loc}/libvirt"
+  action :nothing
+  code <<-EOH
+  virsh net-define net_NAT.xml
+  virsh net-destroy NAT
+  virsh net-start NAT
+  virsh net-autostart NAT
+  EOH
+end
+
+bash 'update_ZONE2_network' do
+  user 'root'
+  cwd "/#{tmp_loc}/libvirt"
+  action :nothing
+  code <<-EOH
+  virsh net-define net_ZONE2.xml
+  virsh net-detroy ZONE2
+  virsh net-start ZONE2
+  virsh net-autostart ZONE2
+  EOH
 end

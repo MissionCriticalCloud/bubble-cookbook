@@ -29,14 +29,14 @@ templates.each do |dest_name, urls|
 
   remote_file "#{dest_path}/#{dest_name}.checksum" do
     source urls[:checksum].to_s
-    mode '0644'
+    mode '0664'
     backup false
     notifies :create, "remote_file[#{dest_path}/#{dest_name}]", :immediately
   end
 
   remote_file "#{dest_path}/#{dest_name}" do
     source urls[:url].to_s
-    mode '0644'
+    mode '0664'
     backup false
     notifies :run, "bash[extract_file_#{dest_name}]", :immediately
     action :nothing
@@ -66,14 +66,14 @@ jenkins_templates.each do |dest_name, urls|
 
   remote_file "#{dest_path}/#{dest_name}.checksum" do
     source urls[:checksum].to_s
-    mode '0644'
+    mode '0664'
     backup false
     notifies :create, "remote_file[#{dest_path}/#{dest_name}]", :immediately
   end
 
   remote_file "#{dest_path}/#{dest_name}" do
     source urls[:url].to_s
-    mode '0644'
+    mode '0664'
     backup false
     action :nothing
   end
@@ -81,7 +81,7 @@ end
 
 remote_file "#{dest_path}/#{node['bubble']['systemvm_template']['internal_md5']}" do
   source "#{node['bubble']['systemvm_template']['jenkins_url']}/#{node['bubble']['systemvm_template']['jenkins_md5']}"
-  mode '0644'
+  mode '0664'
   backup false
   notifies :run, 'ruby_block[download_systemvm_templates]', :immediately
 end
@@ -93,7 +93,7 @@ ruby_block 'download_systemvm_templates' do
 
       f = Chef::Resource::File::RemoteFile.new("#{dest_path}/#{node['bubble']['systemvm_template']['name']}.#{file_extension}", run_context)
       f.source "#{node['bubble']['systemvm_template']['jenkins_url']}/#{line.split[1]}"
-      f.mode '0644'
+      f.mode '0664'
       f.backup false
       f.run_action :create
 
