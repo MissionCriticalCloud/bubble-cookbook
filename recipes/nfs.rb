@@ -19,7 +19,7 @@ end
 
 # Export /data as NFS
 nfs_export '/data' do
-  network '192.168.22.0/24'
+  network ['192.168.22.0/24', '192.168.22.0/24']
   writeable true
   sync true
   options ['no_root_squash', 'async', 'fsid=1']
