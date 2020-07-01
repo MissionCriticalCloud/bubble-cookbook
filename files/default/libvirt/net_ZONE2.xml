@@ -8,6 +8,11 @@ or other application using the libvirt API.
 <network>
   <name>ZONE2</name>
   <uuid>536c9547-2b79-4b18-83c2-ac029a480d1b</uuid>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535' />
+    </nat>
+  </forward>
   <bridge name='virbr1' stp='on' delay='0' />
   <mtu size="1600"/>
   <mac address='52:54:00:d6:2f:e1' />
