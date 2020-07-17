@@ -1,6 +1,8 @@
+include_recipe 'openssh::default'
+include_recipe 'resolver::default'
+
 # Recipes controlled by attributes
 include_recipe 'bubble::packages' if node['bubble']['packages']
-group node['bubble']['group_name']
 include_recipe 'bubble::users' if node['bubble']['users']
 include_recipe 'bubble::data_disk' if node['bubble']['data_disk']
 include_recipe 'bubble::nfs' if node['bubble']['nfs']
@@ -16,14 +18,6 @@ include_recipe 'bubble::minikube' if node['bubble']['minikube'] && node['bubble'
 include_recipe 'bubble::helm' if node['bubble']['helm']
 include_recipe 'bubble::terraform' if node['bubble']['terraform']
 include_recipe 'bubble::npm_packages' if node['bubble']['npm_packages']
-
-# Copy ssh_config to manage global SSH settings
-cookbook_file '/etc/ssh/ssh_config' do
-  source 'ssh/ssh_config'
-  owner 'root'
-  group 'root'
-  mode '0644'
-end
 
 # Create base directory structure on /data
 %w( /data/iso /data/images /data/git /data/shared ).each do |path|
@@ -43,6 +37,7 @@ git '/data/shared' do
   revision node['bubble']['toolkit']['branch']
   group node['bubble']['group_name']
   action :sync
+  only_if { node['bubble']['toolkit']['git_sync'] }
 end
 
 # Install python clint for kvm_local_deploy

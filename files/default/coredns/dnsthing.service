@@ -3,10 +3,10 @@ Description=Manage dynamic dns for docker containers
 After=docker.service
 
 [Service]
-PIDFile=/home/coredns/dnsthing.pid
+PIDFile=/var/run/dnsthing.pid
 User=coredns
 WorkingDirectory=/home/coredns
-ExecStart=/usr/bin/python /opt/bin/dnsthing.py -H /home/coredns/docker.cloud.lan --debug
+ExecStart=/usr/bin/python /opt/coredns/dnsthing.py -H /home/coredns/docker.cloud.lan --debug
 Restart=always
 
 [Install]

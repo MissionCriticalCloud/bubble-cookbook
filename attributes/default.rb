@@ -7,22 +7,34 @@ default['authorization']['sudo']['agent_forwarding'] = true
 default['authorization']['sudo']['sudoers_defaults'] = ['!lecture,tty_tickets,!fqdn']
 default['authorization']['sudo']['command_aliases'] = []
 
+# DNS
+default['resolver']['nameservers'] = ['192.168.22.1']
+default['resolver']['search'] = 'cloud.lan'
+default['bubble']['coredns']['name_server'] = '8.8.8.8:53 8.8.4.4:53'
+
 # Customize chef-run
 default['bubble']['users_databag'] = 'users'
 default['bubble']['group_name'] = 'bubble'
-default['bubble']['toolkit']['branch'] = 'master'
-default['bubble']['packages'] = true
 default['bubble']['users'] = true
 default['bubble']['sudo'] = true
+
+default['bubble']['toolkit']['branch'] = 'master'
+default['bubble']['toolkit']['git_sync'] = true
+
+default['bubble']['packages'] = true
 default['bubble']['data_disk'] = false
 default['bubble']['data_disk_device'] = 'vdb'
 default['bubble']['nfs'] = true
+
 default['bubble']['softethervpn-server'] = true
 default['bubble']['softethervpn-config'] = 'vpn_normal.batch'
 default['bubble']['softethervpn-psk'] = 'softether'
+
 default['bubble']['community-templates'] = true
+
 default['bubble']['cloudinit-metaserv'] = true
 default['bubble']['cloudinit-password'] = 'password'
+
 default['bubble']['docker']['install'] = false
 default['bubble']['docker']['version'] = '18.09.5'
 
@@ -52,21 +64,20 @@ default['bubble']['npm_packages'] = false
 force_default['maven']['mavenrc']['opts'] = ''
 
 # setting required when also running openssh cookbook
-node.rm('openssh', 'client')
-force_default['openssh']['client'] = {
+default['openssh']['client'] = {
   'strict_host_key_checking': 'no',
   'user_known_hosts_file': '/dev/null',
   'forward_agent': 'yes',
   "cs*": {
-    "  User": 'root',
+    "user": 'root',
   },
   "xen*": {
-    "  User": 'root',
+    "user": 'root',
   },
   "kvm*": {
-    "  User": 'root',
+    "user": 'root',
   },
   "nsx*": {
-    "  User": 'admin',
+    "user": 'admin',
   },
 }

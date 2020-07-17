@@ -1813,6 +1813,144 @@ or other application using the libvirt API.
     <host ip='192.168.22.99'>
       <hostname>gen3.cloud.lan</hostname>
     </host>
+    <host ip='192.168.23.20'>
+      <hostname>kvm90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.21'>
+      <hostname>kvm91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.22'>
+      <hostname>kvm92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.23'>
+      <hostname>kvm93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.24'>
+      <hostname>kvm94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.25'>
+      <hostname>kvm95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.26'>
+      <hostname>kvm96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.27'>
+      <hostname>kvm97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.28'>
+      <hostname>kvm98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.29'>
+      <hostname>kvm99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.60'>
+      <hostname>cs90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.61'>
+      <hostname>cs91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.62'>
+      <hostname>cs92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.63'>
+      <hostname>cs93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.64'>
+      <hostname>cs94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.65'>
+      <hostname>cs95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.66'>
+      <hostname>cs96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.67'>
+      <hostname>cs97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.68'>
+      <hostname>cs98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.69'>
+      <hostname>cs99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.70'>
+      <hostname>db90.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.71'>
+      <hostname>db91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.72'>
+      <hostname>db92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.73'>
+      <hostname>db93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.74'>
+      <hostname>db94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.75'>
+      <hostname>db95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.76'>
+      <hostname>db96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.77'>
+      <hostname>db97.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.78'>
+      <hostname>db98.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.79'>
+      <hostname>db99.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.80'>
+      <hostname>nsxmgr91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.81'>
+      <hostname>nsxmgr92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.82'>
+      <hostname>nsxmgr93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.83'>
+      <hostname>nsxcon91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.84'>
+      <hostname>nsxcon92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.85'>
+      <hostname>nsxcon93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.86'>
+      <hostname>nsxcon94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.87'>
+      <hostname>nsxcon95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.88'>
+      <hostname>nsxcon96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.89'>
+      <hostname>nsxsvc91.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.90'>
+      <hostname>nsxsvc92.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.91'>
+      <hostname>nsxsvc93.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.92'>
+      <hostname>nsxsvc94.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.93'>
+      <hostname>nsxsvc95.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.94'>
+      <hostname>nsxsvc96.cloud.lan</hostname>
+    </host>
+    <host ip='192.168.23.95'>
+      <hostname>sdn91.cloud.lan</hostname>
+    </host>
   </dns>
   <ip address='192.168.22.1' netmask='255.255.255.0'>
     <dhcp>
